@@ -1,0 +1,132 @@
+// out: null
+/* Fonts import
+===============================
+==============================*/
+@import "http://fonts.fontstorage.com/import/acme.css";
+@import "http://fonts.fontstorage.com/import/sintony.css";
+/*
+	Acme, 400
+	Sintony, 400, 700
+*/
+
+@import "_variables";
+@import "_helpers";
+
+.reset();
+
+/* Bower components import
+===============================
+==============================*/
+@import "../../bower_components/lesshat/less/shape";
+
+
+/* Vendor libs import
+==============================
+@import (less) "libs/font-awesome.css";
+==============================*/
+@import "libs/fonts";
+@import "libs/myFrameworks/my2";
+@import "libs/smart-grid";
+
+
+/* Project Elements
+==============================*/
+@import "_elements";
+
+
+
+/* Pages import
+==============================*/
+@import "pages/home";
+@import "pages/header";
+@import "pages/nav";
+@import "pages/slide";
+@import "pages/services";
+@import "pages/footer";
+
+*, *:before,
+*, *:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  .sintony();
+  .rem-size(14);
+  color: @dark-grey;
+  background-color: @light-grey;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h1 {
+  .h1-fontSize;
+  .asme(700);
+}
+
+
+h2 {
+  .h2-fontSize;
+  .asme(700);
+}
+
+h3 {
+  .h3-fontSize;
+  .asme(700);
+}
+
+h4 {
+  .h4-fontSize;
+  .asme(700);
+}
+
+h5 {
+  .h5-fontSize;
+  .asme(700);
+}
+
+h6 {
+  .h6-fontSize;
+  .asme(700);
+}
+
+/*
+.debug {
+    .debug(rgba(0, 0, 0, 0.5), 1px solid #ff0);
+}
+*/
+
+html {
+  box-sizing: border-box;
+
+  .html-fz(16);
+
+  .sm-block({
+      .html-fz(15);
+  });
+
+  .xs-block({
+      .html-fz(14);
+  });
+
+  .xxs-block({
+    .html-fz(13);
+  });
+}
+
+.wrapper {
+    .wrapper();
+}
